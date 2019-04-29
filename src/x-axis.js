@@ -3,7 +3,9 @@ import PropTypes from 'prop-types'
 import { Text, View } from 'react-native'
 import * as d3Scale from 'd3-scale'
 import * as array from 'd3-array'
-import Svg, { G, Text as SVGText } from 'react-native-svg'
+
+import { Svg } from 'expo'
+const { G } = Svg;
 
 class XAxis extends PureComponent {
 
@@ -118,7 +120,7 @@ class XAxis extends PureComponent {
                                         const { svg: valueSvg = {} } = data[index] || {}
 
                                         return (
-                                            <SVGText
+                                            <Svg.Text
                                                 textAnchor={ 'middle' }
                                                 originX={ x(value) }
                                                 alignmentBaseline={ 'hanging' }
@@ -128,7 +130,7 @@ class XAxis extends PureComponent {
                                                 x={ x(value) }
                                             >
                                                 {formatLabel(value, index)}
-                                            </SVGText>
+                                            </Svg.Text>
                                         )
                                     })
                                 }

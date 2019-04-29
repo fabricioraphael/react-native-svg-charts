@@ -4,8 +4,9 @@ import * as shape from 'd3-shape'
 import PropTypes from 'prop-types'
 import React, { PureComponent } from 'react'
 import { View } from 'react-native'
-import Svg from 'react-native-svg'
 import Path from '../animated-path'
+
+import { Svg } from 'expo'
 
 class Chart extends PureComponent {
 
