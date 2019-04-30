@@ -1,6 +1,8 @@
 import React from 'react'
-import { Defs, LinearGradient, Stop } from 'react-native-svg'
 import { LineChart } from 'react-native-svg-charts'
+
+import { Svg } from 'expo'
+const { Defs, LinearGradient, Stop } = Svg
 
 class GradientLineExample extends React.PureComponent {
 

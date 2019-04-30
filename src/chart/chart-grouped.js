@@ -2,7 +2,7 @@ import * as array from 'd3-array'
 import PropTypes from 'prop-types'
 import React, { PureComponent } from 'react'
 import { View } from 'react-native'
-import Svg from 'react-native-svg'
+import { Svg } from 'expo'
 import Path from '../animated-path'
 import Chart from './chart'
 

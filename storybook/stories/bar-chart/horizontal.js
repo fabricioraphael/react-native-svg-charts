@@ -1,8 +1,10 @@
 import React from 'react'
 import { View } from 'react-native'
 import { BarChart, Grid, YAxis } from 'react-native-svg-charts'
-import { Defs, LinearGradient, Stop, Text } from 'react-native-svg'
 import * as scale from 'd3-scale'
+
+import { Svg } from 'expo'
+const { Defs, LinearGradient, Stop, Text  } = Svg
 
 class BarChartExample extends React.PureComponent {
 

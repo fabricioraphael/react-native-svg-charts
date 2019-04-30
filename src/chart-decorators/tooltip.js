@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import { Circle, G, Line, Rect, Text } from 'react-native-svg'
+import { Svg } from 'expo'
+const { Circle, G, Line, Rect } = Svg;
 
 const Tooltip = ({ x, y, value, index, height, text, stroke, pointStroke }) => {
     return (
@@ -39,12 +40,12 @@ const Tooltip = ({ x, y, value, index, height, text, stroke, pointStroke }) => {
                     rx={ 2 }
                     ry={ 2 }
                 />
-                <Text
+                <Svg.Text
                     fontSize="12"
                     textAnchor="middle"
                 >
                     { text }
-                </Text>
+                </Svg.Text>
             </G>
         </G>
     )

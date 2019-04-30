@@ -1,6 +1,8 @@
 import React from 'react'
-import { Text, G } from 'react-native-svg'
 import { PieChart } from 'react-native-svg-charts'
+
+import { Svg } from 'expo'
+const { Text, G } = Svg
 
 class PieChartWithCenterTextExample extends React.PureComponent {
 

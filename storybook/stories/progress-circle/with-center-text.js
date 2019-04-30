@@ -1,6 +1,8 @@
 import React from 'react'
-import { Text, G } from 'react-native-svg'
 import { ProgressCircle } from 'react-native-svg-charts'
+
+import { Svg } from 'expo'
+const { Text, G } = Svg
 
 class ProgressCircleWithCenterTextExample extends React.PureComponent {
 

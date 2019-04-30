@@ -1,6 +1,8 @@
 import React from 'react'
 import { AreaChart, Grid } from 'react-native-svg-charts'
-import { Circle, Path } from 'react-native-svg'
+
+import { Svg } from 'expo'
+const { Circle, Path } = Svg
 
 class DecoratorExample extends React.PureComponent {
 
